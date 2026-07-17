@@ -11,9 +11,11 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLink = (href: string) =>
+  `relative transition duration-300 ${
     pathname === href
       ? "text-green-600 font-semibold"
-      : "hover:text-green-600 transition";
+      : "text-gray-700 hover:text-green-600"
+  }`;
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">

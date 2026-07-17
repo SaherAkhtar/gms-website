@@ -99,7 +99,7 @@ export default function AboutPage() {
 
             <div>
               <h2 className="text-5xl font-bold text-green-600">
-                1000+
+                2500+
               </h2>
               <p className="mt-2 text-gray-600">
                 Successful Visas
@@ -108,7 +108,7 @@ export default function AboutPage() {
 
             <div>
               <h2 className="text-5xl font-bold text-green-600">
-                25+
+                45+
               </h2>
               <p className="mt-2 text-gray-600">
                 Countries

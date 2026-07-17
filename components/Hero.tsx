@@ -21,7 +21,7 @@ export default function Hero() {
           </span>
 
           {/* Heading */}
-          <h1 className="mt-8 text-5xl font-extrabold leading-tight text-white md:text-7xl">
+          <h1 className="mt-8 text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
             Build Your Future
             <span className="block text-yellow-400">
               Study, Work & Travel Abroad
@@ -30,8 +30,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="mt-8 text-lg leading-8 text-gray-200">
-            Get Migration & Study provides professional guidance for Study Visa,
-            Visit Visa, Work Visa, Immigration and Schengen Group Tours with
+            Get Migration & Study provides professional guidance for Study Visa, Visit Visa, Work Permit Visa, Immigration and Schengen Group Tours with
             complete support from start to finish.
           </p>
 
@@ -39,39 +38,39 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="rounded-full bg-green-600 px-8 py-4 font-semibold text-white transition hover:bg-green-700"
+              className="rounded-full bg-green-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-green-700 hover:shadow-xl"
             >
               Book Free Consultation
             </Link>
 
             <Link
               href="#services"
-              className="rounded-full border-2 border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-black"
+              className="rounded-full border-2 border-white px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-black hover:shadow-xl"
             >
               Our Services
             </Link>
           </div>
 
           {/* Stats */}
-          <div className="mt-16 grid grid-cols-3 gap-6 rounded-2xl bg-white/10 p-6 backdrop-blur-md">
+          <div className="mt-16 grid grid-cols-3 gap-4 rounded-3xl bg-white/10 p-6 backdrop-blur-lg border border-white/20 shadow-xl">
 
             <div className="text-center">
-              <h2 className="text-4xl font-bold text-yellow-400">1000+</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">2500+</h2>
               <p className="mt-2 text-sm text-white">
                 Successful Visas
               </p>
             </div>
 
             <div className="text-center">
-              <h2 className="text-4xl font-bold text-yellow-400">25+</h2>
-              <p className="mt-2 text-sm text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">45+</h2>
+              <p className="mt-2 text-xs sm:text-sm text-white">
                 Countries
               </p>
             </div>
 
             <div className="text-center">
               <h2 className="text-4xl font-bold text-yellow-400">98%</h2>
-              <p className="mt-2 text-sm text-white">
+              <p className="mt-2 text-xs sm:text-sm text-white">
                 Client Satisfaction
               </p>
             </div>

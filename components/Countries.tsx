@@ -5,18 +5,22 @@ const countries = [
   {
     name: "Canada",
     image: "/images/countries/canada.jpg",
+    slug: "canada",
   },
   {
     name: "Australia",
     image: "/images/countries/australia.jpg",
+    slug: "australia",
   },
   {
     name: "United Kingdom",
     image: "/images/countries/uk.jpg",
+    slug: "uk",
   },
   {
     name: "Europe",
     image: "/images/countries/europe.jpg",
+    slug: "europe",
   },
 ];
 
@@ -60,11 +64,11 @@ export default function Countries() {
                 </h3>
 
                 <Link
-                  href="/countries"
-                  className="mt-4 inline-block font-semibold text-green-600 hover:text-green-700"
+                href={`/countries/${country.slug}`}
+                className="mt-4 inline-block font-semibold text-green-600 hover:text-green-700"
                 >
-                  Learn More →
-                </Link>
+                Learn More →
+               </Link>
               </div>
             </div>
           ))}

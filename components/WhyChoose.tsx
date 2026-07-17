@@ -1,72 +1,86 @@
 import {
-  Award,
+  FileText,
   Users,
   Globe,
-  BadgeCheck,
+  Clock,
+  MessageCircle,
+  ShieldCheck,
 } from "lucide-react";
 
 const features = [
   {
-    icon: Award,
-    title: "Experienced Consultants",
-    desc: "Professional visa experts with years of experience.",
+    icon: FileText,
+    title: "Expert Visa Guidance",
+    description:
+      "Complete assistance for study, visit, work permit and immigration applications.",
   },
   {
     icon: Users,
-    title: "1000+ Happy Clients",
-    desc: "Trusted by students, families and professionals.",
+    title: "Experienced Consultants",
+    description:
+      "Our experienced team provides personalized guidance throughout your visa journey.",
   },
   {
     icon: Globe,
-    title: "Worldwide Destinations",
-    desc: "Study, work and travel opportunities across the globe.",
+    title: "45+ Destinations",
+    description:
+      "Professional visa services for countries across Europe, Australia, Canada, the UK and more.",
   },
   {
-    icon: BadgeCheck,
-    title: "High Visa Success",
-    desc: "Complete documentation and expert application support.",
+    icon: Clock,
+    title: "Fast Processing",
+    description:
+      "We help you prepare accurate documentation for a smoother application process.",
+  },
+  {
+    icon: MessageCircle,
+    title: "Free Consultation",
+    description:
+      "Discuss your goals with our consultants before starting your application.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Trusted Support",
+    description:
+      "From your first consultation until your visa process is complete, we're here to help.",
   },
 ];
 
 export default function WhyChoose() {
   return (
-    <section className="bg-green-50 py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
 
-        <div className="text-center">
-          <p className="font-semibold uppercase tracking-[0.3em] text-green-600">
-            Why Choose Us
-          </p>
-
-          <h2 className="mt-4 text-5xl font-bold text-gray-900">
-            Why Clients Trust GMS
+        <div className="text-center mb-14">
+          <h2 className="text-4xl font-bold">
+            Why Choose <span className="text-green-600">GMS?</span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-600">
-            We provide complete visa solutions with professional guidance,
-            transparent processes and dedicated customer support.
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            We provide reliable visa and immigration solutions with professional
+            guidance, transparent processes and dedicated client support.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {features.map((item) => {
-            const Icon = item.icon;
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
 
             return (
               <div
-                key={item.title}
-                className="rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl"
+               key={index}
+               className="bg-white rounded-2xl shadow-md border-t-4 border-green-600 p-6 hover:shadow-xl transition duration-300"
               >
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
-                  <Icon className="h-8 w-8 text-green-600" />
+                <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-6">
+                  <Icon className="w-8 h-8 text-green-600" />
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold">
-                  {item.title}
+                <h3 className="text-xl font-bold mb-3">
+                  {feature.title}
                 </h3>
 
-                <p className="mt-4 text-gray-600">
-                  {item.desc}
+                <p className="text-gray-600 leading-7">
+                  {feature.description}
                 </p>
               </div>
             );

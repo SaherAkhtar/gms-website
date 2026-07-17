@@ -4,8 +4,8 @@ import {
   Briefcase,
   Globe,
   Users,
+  Calendar,
 } from "lucide-react";
-
 const services = [
   {
     icon: GraduationCap,
@@ -21,7 +21,7 @@ const services = [
   },
   {
     icon: Briefcase,
-    title: "Work Visa",
+    title: "Work Permit Visa",
     description:
       "Professional guidance for international work permits and employment visas.",
   },
@@ -37,6 +37,12 @@ const services = [
     description:
       "Enjoy memorable Schengen group tours with complete visa and travel arrangements.",
   },
+  {
+   icon: Calendar,
+   title: "Appointment Booking",
+   description:
+    "We help you book embassy appointments and guide you through the complete application process.",
+ }
 ];
 
 export default function Services() {
