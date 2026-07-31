@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   const phone = "923008382774";
 
   const message =
-    "Hi, I'm interested in studying abroad. I would like a free consultation.";
+  "Hello Get Migration & Study Team,\n\nI visited your website and would like to inquire about your visa and immigration services. Please contact me at your earliest convenience.\n\nThank you.";
 
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
